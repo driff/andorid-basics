@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/characters"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:iconTint="#000"
+        android:contentDescription="Characters"
+        android:title="Characters" />
+    <item
+        android:id="@+id/spaceships"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:iconTint="#000"
+        android:contentDescription="Spaceships"
+        android:title="Spaceships" />
+    <item
+        android:id="@+id/species"
+        android:iconTint="#000"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:contentDescription="Species"
+        android:title="Species" />
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/species"
+    app:startDestination="@id/speciesFragment">
+
+    <fragment
+        android:id="@+id/speciesFragment"
+        android:name="com.fif.tech.android.myapplication.SpeciesFragment"
+        android:label="fragment_species"
+        tools:layout="@layout/fragment_species" />
+</navigation>
