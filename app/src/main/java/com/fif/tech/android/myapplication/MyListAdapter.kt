@@ -4,15 +4,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.fif.tech.android.myapplication.databinding.ListItemsBinding
+import com.fif.tech.android.myapplication.entities.People
 
 /**
  * Created by JGarcia on 29-10-20.
  */
-class MyListAdapter(private val list: List<Any>): RecyclerView.Adapter<MyListAdapter.MyViewHolder>() {
+class MyListAdapter(private var list: List<People>): RecyclerView.Adapter<MyListAdapter.MyViewHolder>() {
+
+    fun update(list: List<People>) {
+        this.list = list
+        notifyDataSetChanged()
+    }
 
     inner class MyViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
-        fun loadView(item: Any) {
-            // TODO: cargar los valores del item en la lista
+        fun loadView(item: People) {
+            ListItemsBinding.bind(view).apply {
+                txtFirst.text = item.name
+                txtSecond.text = item.gender
+            }
         }
     }
 
